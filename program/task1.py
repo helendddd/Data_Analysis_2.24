@@ -25,7 +25,7 @@ def sum1(eps, s_dict):
         if abs(a) < eps:
             break
         else:
-            s += n
+            s += a
             n += 1
     with lock:
         s_dict["sum1"] = s
@@ -85,3 +85,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
